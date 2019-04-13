@@ -41,7 +41,7 @@
         <h2>A Coding Challenge</h2>
         <img src="project.png" />
         <p>Make a program that generates a string of 100 random numbers 0-9, then accept user input to count how many times a certain digit appears in the string.</p>
-        <button onclick="gimme100(max)">Show me 100</button>
+        <button onclick="gimme100(100)">Show me 100</button>
         <p id="zero"></p>
         <p>Bonus 1: Make the program highlight the occurrences in the output.</p>
 
@@ -56,10 +56,14 @@
     <!-- By contrast, if you are required to repeat some computation until some condition is met, you’ll need a while loop. This is indefinite iteration. -->
 
     <script>
-        function gimme100(max) {
-            return Math.floor(Math.random() * Math.floor(max));
+        function gimme100(i) {
+            i =  Math.floor(Math.random() * Math.floor(100));
+            while (i < 101) {
+                document.write(i);
+               i++;
+            }
         }
-        console.log(gimme100(100));
+        (gimme100(100));
     </script>
 </body>
 
