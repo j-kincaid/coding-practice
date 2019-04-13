@@ -1,2 +1,2 @@
 # coding-practice
-simple exercises to prime my mind for technical interviews
+simple exercises to prime my mind for live coding.
